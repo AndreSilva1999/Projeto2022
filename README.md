@@ -1,5 +1,3 @@
-# Projeto2022
-
 # ISCTD 2.0: A new and improved version for helping research on inter-species interactions
 
 Inter Species CrossTalk Database (ISCTD 2.0) is an Entity-Relationship database model, with the purpose of documenting and organize information related to Inter-species interactions. This information was previously deposited and curated in an online platform (https://www.ceb.uminho.pt/ISCTD/) were information regarding interactions between species in coinfection scenarios.
