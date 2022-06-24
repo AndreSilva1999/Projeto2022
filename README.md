@@ -40,7 +40,7 @@ Display Resolution: 1280×1024 is recommended, 1024×768 is minimum.
 Next simply go to https://dev.mysql.com/downloads/workbench/ and download the MySQL workbench file for your operative system.
 If you select Ubuntu Linux, please verify your Ubuntu version (note that the version for Ubunto 22.04 is the same as for the version 20.04).
 
-1. sudo dpkg -i mysql -filename
+1. `sudo dpkg -i mysql -filename`
 
 If gnome-menus is not install in the system, please execute the following command:
 
