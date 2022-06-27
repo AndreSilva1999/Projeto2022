@@ -6,10 +6,9 @@ Inter Species CrossTalk Database (ISCTD 2.0) is an Entity-Relationship database 
 
 ### REQUIREMENTS
 
-1. All software used was installed under Windows 11 Home, version 21H2.
-2. ISCTD 2.0 is written with SQL language and tested with MySQL Workbench and MariaDB. 
-3. A similar Visual tool for database architects, developers, and DBAs can be used instead.
-4. Microsoft . NET Framework 4.5. 2 or later
+All software used was installed under Windows 11 Home, version 21H2.
+ISCTD 2.0 is written with SQL language and tested with MySQL Workbench and MariaDB. A similar Visual tool for database architects, developers, and DBAs can be used instead.
+Microsoft . NET Framework 4.5. 2 or later
 
 ### Hardware Requirements
 
@@ -38,7 +37,7 @@ Display Resolution: 1280×1024 is recommended, 1024×768 is minimum.
     `sudo mysql -u root`
 
 Next simply go to https://dev.mysql.com/downloads/workbench/ and download the MySQL workbench file for your operative system.
-If you select Ubuntu Linux, please verify your Ubuntu version (note that the version for Ubunto 22.04 is the same as for the version 20.04).
+If you select Ubuntu Linux, please verify your Ubuntu version (note that the version for Ubuntu 22.04 is the same as for the version 20.04).
 
 1. `sudo dpkg -i mysql -filename`
 
