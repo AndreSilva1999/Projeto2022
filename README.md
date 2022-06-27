@@ -6,10 +6,10 @@ Inter Species CrossTalk Database (ISCTD 2.0) is an Entity-Relationship database 
 
 ### REQUIREMENTS
 
-All software used was installed under Windows 11 Home, version 21H2.
-ISCTD 2.0 is written with SQL language and tested with MySQL Workbench and MariaDB. 
-A similar Visual tool for database architects, developers, and DBAs can be used instead.
-Microsoft . NET Framework 4.5. 2 or later.
+1. All software used was installed under Windows 11 Home, version 21H2.
+2. ISCTD 2.0 is written with SQL language and tested with MySQL Workbench and MariaDB. 
+3. A similar Visual tool for database architects, developers, and DBAs can be used instead.
+4. Microsoft . NET Framework 4.5. 2 or later
 
 ### Hardware Requirements
 
