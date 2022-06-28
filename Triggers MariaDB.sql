@@ -41,16 +41,8 @@ DELIMITER //
 CREATE TRIGGER Remove_interaction before delete
 ON source
 FOR each row BEGIN
-delete from interacao where( select * from interacao WHERE interacao.Source_id_Source =old.id_Source)
-END;
-DELIMITER ;
-
-#Remover todas as linhas correspondentes a uma determinada Interacao quando esse id foi eliminado
-DELIMITER //
-CREATE TRIGGER Remove_interaction before delete
-ON interacao
-FOR each row BEGIN
-delete from interacao where( select * from interacao WHERE interacao.Source_id_Source =old.Source_id_Source)
+	delete from interacao 
+    Where old.id_Source=Source_id_Source
 END;
 DELIMITER ;
 
