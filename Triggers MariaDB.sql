@@ -23,13 +23,13 @@ IF new.Método_id_Metodo not in método.id_Metodo then insert into estirpes(id_M
 
 IF new.Source_id_Source not in source.id_Source
 	BEGIN
-			RAISERROR ('Please, uptade source table before insert')
+			RAISERROR ('Please, update source table before insert')
 			ROLLBACK 
 	END 
 
 IF new.Target_id_Target not in source.id_Target
 	BEGIN
-			RAISERROR ('Please, uptade target table before insert')
+			RAISERROR ('Please, update target table before insert')
 			ROLLBACK 
 	END 
 END;
