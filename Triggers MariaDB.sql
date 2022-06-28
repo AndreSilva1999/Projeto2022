@@ -23,13 +23,13 @@ IF new.Método_id_Metodo not in método.id_Metodo then insert into estirpes(id_M
 
 IF new.Source_id_Source not in source.id_Source
 	BEGIN
-			RAISERROR ('Please, update source table before insert')
+			RAISERROR ('Please, uptade source table before insert')
 			ROLLBACK 
 	END 
 
 IF new.Target_id_Target not in source.id_Target
 	BEGIN
-			RAISERROR ('Please, update target table before insert')
+			RAISERROR ('Please, uptade target table before insert')
 			ROLLBACK 
 	END 
 END;
@@ -38,9 +38,20 @@ DELIMITER //
 
 #Remover todas as linhas correspondentes a uma determinada SOURCE quando esse id foi eliminado
 DELIMITER //
-CREATE TRIGGER Remove_interaction AFTER delete
+CREATE TRIGGER Remove_interaction before delete
 ON source
 FOR each row BEGIN
-delete from interacao where( select 1 from interacao WHERE interacao.Source_id_Source =old.Source_id_Source)
+delete from interacao where( select * from interacao WHERE interacao.Source_id_Source =old.id_Source)
 END;
 DELIMITER ;
+
+#Remover todas as linhas correspondentes a uma determinada Interacao quando esse id foi eliminado
+DELIMITER //
+CREATE TRIGGER Remove_interaction before delete
+ON interacao
+FOR each row BEGIN
+delete from interacao where( select * from interacao WHERE interacao.Source_id_Source =old.Source_id_Source)
+END;
+DELIMITER ;
+
+    
