@@ -14,7 +14,7 @@ FROM interacao;
 
 SELECT 
     Source_id_Source,Target_id_Target,Tipo_de_Interacao_id_interacao,Doenca_id_doenca_associada,
-    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes
+    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes,PMID
 FROM
     interacao,
     source,
@@ -26,7 +26,7 @@ WHERE
 
 SELECT 
     Source_id_Source,Target_id_Target,Tipo_de_Interacao_id_interacao,Doenca_id_doenca_associada,
-    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes
+    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes,PMID
 FROM
     interacao,
     source,
@@ -38,7 +38,7 @@ WHERE
 
 SELECT 
     Source_id_Source,Target_id_Target,Tipo_de_Interacao_id_interacao,Doenca_id_doenca_associada,
-    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes
+    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes,PMID
 FROM
     interacao,
     source,
@@ -51,7 +51,7 @@ WHERE
 
 SELECT 
     Source_id_Source,Target_id_Target,Tipo_de_Interacao_id_interacao,Doenca_id_doenca_associada,
-    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes
+    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes,PMID
 FROM
     interacao,
     source,
@@ -63,7 +63,7 @@ WHERE
 
 SELECT 
     Source_id_Source,Target_id_Target,Tipo_de_Interacao_id_interacao,Doenca_id_doenca_associada,
-    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes
+    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes,PMID
 FROM
     interacao,
     source,
@@ -76,7 +76,7 @@ WHERE
 
 SELECT 
     Source_id_Source,Target_id_Target,Tipo_de_Interacao_id_interacao,Doenca_id_doenca_associada,
-    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes
+    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes,PMID
 FROM
     interacao,
     source,
@@ -88,7 +88,7 @@ WHERE
 
 SELECT 
     Source_id_Source,Target_id_Target,Tipo_de_Interacao_id_interacao,Doenca_id_doenca_associada,
-    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes
+    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes,PMID
 FROM
     interacao,
     source,
@@ -101,7 +101,7 @@ WHERE
         
 SELECT DISTINCT
     Source_id_Source,Target_id_Target,Tipo_de_Interacao_id_interacao,Doenca_id_doenca_associada,
-    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes
+    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes,PMID
 FROM
     interacao,
     entidade,
