@@ -1,5 +1,4 @@
 -- TRIGGERS ------------------------------------------------------
-
 #Inserir informações nas restantes tabelas, após inserir na tabela INTERACOES
 #Remover  informações nas restantes tabelas, após remover da tabela INTERACOES
 DELIMITER //
@@ -34,10 +33,10 @@ IF new.Target_id_Target not in source.id_Target
 	END 
 END;
 
-DELIMITER //
+DELIMITER;
 
 #Remover todas as linhas correspondentes a uma determinada SOURCE quando esse id foi eliminado
-DELIMITER //
+DELIMITER $$
 CREATE TRIGGER Remove_interaction before delete
 ON source
 FOR each row BEGIN
@@ -46,4 +45,15 @@ FOR each row BEGIN
 END;
 DELIMITER ;
 
+#Remover todas as linhas correspondentes a uma determinada Interacao quando esse id foi eliminado
+DELIMITER $$
+CREATE TRIGGER Remove_interaction before delete
+ON interacao
+FOR each row BEGIN
+	delete from interacao 
+    Where Source_id_Source= old.Source_id_Source
+END;
+DELIMITER ;
+
+    
     
