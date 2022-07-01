@@ -1,7 +1,12 @@
+-- SELECTS -----------------------------------------------------
+-- Exemplos ------------
+
+#Selecionar na tabela interacao todas as Source em que o id=1
 SELECT * 
 FROM interacao
 WHERE interacao.Source_id_Source= 1;
 
+#Selecionar na tabela interacao todas as linhas em que o Ano=2015
 SELECT 
     *
 FROM
@@ -14,7 +19,7 @@ FROM interacao;
 
 SELECT 
     Source_id_Source,Target_id_Target,Tipo_de_Interacao_id_interacao,Doenca_id_doenca_associada,
-    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes,PMID
+    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes
 FROM
     interacao,
     source,
@@ -26,7 +31,7 @@ WHERE
 
 SELECT 
     Source_id_Source,Target_id_Target,Tipo_de_Interacao_id_interacao,Doenca_id_doenca_associada,
-    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes,PMID
+    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes
 FROM
     interacao,
     source,
@@ -38,7 +43,7 @@ WHERE
 
 SELECT 
     Source_id_Source,Target_id_Target,Tipo_de_Interacao_id_interacao,Doenca_id_doenca_associada,
-    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes,PMID
+    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes
 FROM
     interacao,
     source,
@@ -51,7 +56,7 @@ WHERE
 
 SELECT 
     Source_id_Source,Target_id_Target,Tipo_de_Interacao_id_interacao,Doenca_id_doenca_associada,
-    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes,PMID
+    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes
 FROM
     interacao,
     source,
@@ -63,7 +68,7 @@ WHERE
 
 SELECT 
     Source_id_Source,Target_id_Target,Tipo_de_Interacao_id_interacao,Doenca_id_doenca_associada,
-    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes,PMID
+    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes
 FROM
     interacao,
     source,
@@ -76,7 +81,7 @@ WHERE
 
 SELECT 
     Source_id_Source,Target_id_Target,Tipo_de_Interacao_id_interacao,Doenca_id_doenca_associada,
-    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes,PMID
+    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes
 FROM
     interacao,
     source,
@@ -88,7 +93,7 @@ WHERE
 
 SELECT 
     Source_id_Source,Target_id_Target,Tipo_de_Interacao_id_interacao,Doenca_id_doenca_associada,
-    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes,PMID
+    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes
 FROM
     interacao,
     source,
@@ -99,9 +104,9 @@ WHERE
         AND source.id_Source = interacao.Source_id_Source;
         
         
-SELECT DISTINCT
+SELECT distinct
     Source_id_Source,Target_id_Target,Tipo_de_Interacao_id_interacao,Doenca_id_doenca_associada,
-    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes,PMID
+    Estirpes_id_Estirpes,Modo_de_crescimento_id_Modo_de_crescimento,Método_id_Metodo,Ano,Observacoes
 FROM
     interacao,
     entidade,
